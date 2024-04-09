@@ -54,7 +54,13 @@ const availableTools = {
     getLocation,
 };
 
-const messages = [
+type MessageInfo = {
+    role: any,
+    content: any,
+    name?: any,
+}
+
+const messages: MessageInfo[] = [
     {
         role: "system",
         content: `You are a helpful assistant. Only use the functions you have been provided with.`,
