@@ -29,7 +29,7 @@ async function test() {
     const getResult = await execute({
         method: 'GET',
         path: '/ipfs/QmVHbLYhhYA5z6yKpQr4JWr3D54EhbSsh7e7BFAAyrkkMf',
-        queries: { chatQuery: ["Who are you?"] },
+        queries: { chatQuery: ["Please suggest some activities based on my location and the weather."] },
         secret: { openaiApiKey: process.env.OPENAI_API_KEY },
         headers: {},
     })
@@ -39,7 +39,7 @@ async function test() {
         method: 'POST',
         path: '/ipfs/QmVHbLYhhYA5z6yKpQr4JWr3D54EhbSsh7e7BFAAyrkkMf',
         queries: {
-            chatQuery: ["When did humans land on the moon?"]
+            chatQuery: ["What are some activities based in London today?"]
         },
         secret: { openaiApiKey: process.env.OPENAI_API_KEY },
         headers: {},
